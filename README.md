@@ -1,2 +1,2 @@
 # organizasyon-
-web sitesini yayınla
+web sitesini yanınla
