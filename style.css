@@ -1,0 +1,3080 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: url("image.jpg.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.navbar{
+    width:100%;
+    height:90px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 10px;
+
+    background:rgba(255,255,255,0.35);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.4);
+}
+
+
+
+.navbar .logo{
+ 
+    display: flex;
+    align-items: center;
+    margin-left: -25px;
+   
+} 
+.navbar .logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.navbar .logo a{
+
+    text-decoration: none;
+    font-size: 36px;
+    color:#C8A96A;
+    margin-left:15px;
+
+}
+
+.navbar ul{
+  
+  float: right;
+  margin-right: 20px;  
+
+}
+.navbar ul li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 8px;line-height: 80px;
+}
+.navbar ul li a{
+    color:#d4b276;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: "Roboto", sans-serif;
+    transition: .3s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: #e7c279;
+    border-radius: 2px;
+}
+.container .center{
+    text-align: center;
+    padding-top: 120px;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color: #C8A96A;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.center h2{
+    color: #C8A96A;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.center .buttons{
+    margin: 35px 280px;
+}
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 19px;
+  font-weight: bold;
+    color:#C8A96A;
+    background:#edf5f8;
+    border:solid 1px rgb(132, 208, 220);
+    cursor:pointer;
+    outline:none;
+    border-radius:25px;
+    transition:3s;
+}
+
+.buttons button:hover{
+    background:#C8A96A;
+}
+
+.urunler{
+    background: url("urunler.jpg.png");
+    min-height: 100vh;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.buttons a{
+    text-decoration: none;
+}
+.products{
+    width: 90%;
+    margin: 40px auto 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.product-card{
+    width: 320px;
+    background: rgba(255,255,255,0.90);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.20);
+    transition: 0.3s;
+    padding-bottom: 20px;
+}
+
+.product-card:hover{
+    transform: translateY(-10px);
+}
+
+.product-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card h3{
+    margin-top: 15px;
+    text-align: center;
+    color: #C8A96A;
+    font-size: 24px;
+}
+
+.product-card p{
+    text-align: center;
+    color: #555;
+    padding: 10px 20px;
+}
+
+.product-card a{
+    display: block;
+    width: 120px;
+    margin: 20px auto 0;
+    padding: 10px;
+    text-align: center;
+    background: #C8A96A;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.product-card a:hover{
+    background: #b89454;
+}
+
+.products{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-slider{
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.product-slider::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #C8A96A;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.product-card{
+    min-width: 320px;
+    flex-shrink: 0;
+}
+
+/* Ürün Detay Sayfası */
+/* Ürün Detay Sayfası */
+
+.product-detail{
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.product-image img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.30);
+}
+.product-info{
+    width: 100%;
+    max-width: 620px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    box-sizing: border-box;
+}
+.product-info h1{
+    color:#C8A96A;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.product-info p{
+    color:#555;
+    font-size:19px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.back-btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#C8A96A;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#B08D57;
+}
+
+
+/* ÜRÜN ÖZELLİKLERİ */
+
+.product-features{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+
+    border-top: 1px solid rgba(200, 169, 106, 0.35);
+}
+
+.product-features li{
+    padding: 15px 12px;
+
+    color: #555;
+    font-size: 16px;
+
+    border-bottom: 1px solid rgba(200, 169, 106, 0.25);
+
+    transition: 0.3s;
+}
+
+.product-features li:hover{
+    background: rgba(200, 169, 106, 0.10);
+
+    padding-left: 20px;
+
+    border-radius: 8px;
+}
+
+
+/* WHATSAPP SİPARİŞ BUTONU */
+
+.whatsapp-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+
+    background: #25D366;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+}
+
+.product-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.product-buttons a {
+    margin: 0 !important;
+    white-space: nowrap;
+}
+
+/* BUTONLARI KARTA SIĞDIR */
+
+.product-buttons{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.product-buttons a{
+    margin: 0 !important;
+    padding: 12px 18px !important;
+    font-size: 14px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+
+/* ==================================
+   TÜM ÜRÜNLER SAYFASI
+================================== */
+
+.products-page{
+    min-height: 100vh;
+
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,0.82),
+        rgba(255,255,255,0.88)
+    ),
+    url("urunler.jpg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding-bottom: 70px;
+
+    box-sizing: border-box;
+}
+
+
+/* MENÜ */
+
+.products-page .navbar{
+
+    width: 100%;
+
+    min-height: 90px;
+
+    padding: 12px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background:
+    rgba(255,255,255,0.88);
+
+    box-sizing: border-box;
+
+    border-bottom:
+    1px solid rgba(200,169,106,0.25);
+
+}
+
+
+.products-page .logo{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+}
+
+
+.products-page .logo img{
+
+    width: 70px;
+
+    height: 70px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+}
+
+
+.products-page .logo-text{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.products-page .logo-text a{
+
+    color: #A9823D;
+
+    text-decoration: none;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+}
+
+
+.products-page .logo-text span{
+
+    color: #765D38;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    margin-top: 3px;
+
+}
+
+
+.products-page .navbar ul{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.products-page .navbar ul a{
+
+    color: #3F3930;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    padding-bottom: 8px;
+
+    transition: 0.3s;
+
+}
+
+
+.products-page .navbar ul a:hover{
+
+    color: #B48A43;
+
+}
+
+
+.products-page .navbar ul a.active{
+
+    color: #B48A43;
+
+    border-bottom:
+    2px solid #C8A96A;
+
+}
+
+
+/* BAŞLIK */
+
+.products-header{
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 35px auto 25px;
+
+    text-align: center;
+
+}
+
+
+.products-header h1{
+
+    color: #A77D38;
+
+    font-size: 48px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    margin: 0;
+
+}
+
+
+.title-line{
+
+    color: #C8A96A;
+
+    font-size: 27px;
+
+    margin: 4px 0;
+
+}
+
+
+.products-header h2{
+
+    color: #51483D;
+
+    font-size: 19px;
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    margin: 5px 0;
+
+}
+
+
+/* ÜRÜNLER */
+
+.all-products{
+
+    width: 88%;
+
+    max-width: 1100px;
+
+    margin: 20px auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+}
+
+
+/* YUVARLAK ÜRÜN KARTI */
+
+.all-product-card{
+
+    width: 100%;
+
+    min-height: 195px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 10px 28px 10px 18px;
+
+    background:
+    rgba(255,255,255,0.84);
+
+    border:
+    1px solid
+    rgba(255,255,255,0.9);
+
+    border-radius: 55px;
+
+    box-shadow:
+    0 12px 28px
+    rgba(105,76,35,0.14);
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+}
+
+
+.all-product-card:hover{
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 18px 35px
+    rgba(105,76,35,0.20);
+
+}
+
+
+/* FOTOĞRAF */
+
+.product-photo{
+
+    width: 290px;
+
+    height: 170px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 42px;
+
+}
+
+
+.product-photo img{
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+}
+
+
+/* ÜRÜN YAZILARI */
+
+.all-product-info{
+
+    flex: 1;
+
+    padding: 5px 0;
+
+}
+
+
+.all-product-info h3{
+
+    color: #A77D38;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    margin:
+    0 0 10px;
+
+}
+
+
+.all-product-info p{
+
+    color: #51483D;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin:
+    0 0 18px;
+
+}
+
+
+/* ÜRÜNÜ İNCELE BUTONU */
+
+.product-detail-btn{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    min-width: 155px;
+
+    padding:
+    12px 22px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #B98B3E,
+        #D1AF6C
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+
+}
+
+
+.product-detail-btn:hover{
+
+    transform:
+    translateY(-2px);
+
+    box-shadow:
+    0 8px 18px
+    rgba(174,126,50,0.30);
+
+}
+
+
+.product-detail-btn span{
+
+    font-size: 22px;
+
+}
+
+
+/* TELEFON VE KÜÇÜK EKRAN */
+
+@media(max-width: 800px){
+
+    .products-page .navbar{
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding:
+        15px 20px;
+
+    }
+
+
+    .products-page .navbar ul{
+
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .products-page .navbar ul a{
+
+        font-size: 13px;
+
+    }
+
+
+    .products-header h1{
+
+        font-size: 33px;
+
+    }
+
+
+    .products-header h2{
+
+        font-size: 14px;
+
+        line-height: 1.6;
+
+    }
+
+
+    .all-products{
+
+        width: 92%;
+
+    }
+
+
+    .all-product-card{
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 15px;
+
+        border-radius: 35px;
+
+        gap: 15px;
+
+    }
+
+
+    .product-photo{
+
+        width: 100%;
+
+        height: 220px;
+
+        border-radius: 27px;
+
+    }
+
+
+    .all-product-info{
+
+        text-align: center;
+
+        padding:
+        5px 10px 12px;
+
+    }
+
+
+    .all-product-info h3{
+
+        font-size: 24px;
+
+    }
+
+
+    .all-product-info p{
+
+        font-size: 15px;
+
+    }
+
+}
+
+.navbar{
+    background: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(8px);
+}
+/* ==================================================
+   NİŞAN TEPSİLERİ VE HEDİYELİKLER SAYFASI
+================================================== */
+
+.products .product-slider{
+    gap: 25px;
+    justify-content: center;
+}
+
+
+/* ÜRÜN KARTLARI */
+
+.products .product-slider .product-card{
+    width: 270px;
+    min-width: 270px;
+
+    height: 370px;
+    min-height: 370px;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+}
+
+
+/* ÜRÜN FOTOĞRAFLARI */
+
+.products .product-slider .product-card img{
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+}
+
+
+/* ÜRÜN BAŞLIĞI */
+
+.products .product-slider .product-card h3{
+    font-size: 22px;
+
+    margin: 12px 10px 5px;
+}
+
+
+/* ÜRÜN AÇIKLAMASI */
+
+.products .product-slider .product-card p{
+    font-size: 15px;
+
+    margin: 3px 10px 8px;
+}
+
+
+/* İNCELE BUTONU */
+
+.products .product-slider .product-card a{
+    padding: 9px 30px;
+
+    margin: auto auto 14px;
+
+    font-size: 15px;
+}
+/* ==================================================
+   TÜM ÜRÜNLERİMİZ - KARTLAR YAN YANA VE ALT ALTA
+================================================== */
+
+.products-page .all-products{
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    box-sizing: border-box;
+}
+
+
+/* ÜRÜN KUTULARI */
+
+.products-page .all-product-card{
+    width: 100%;
+
+    min-height: 390px;
+
+    margin: 0;
+
+    padding: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    border-radius: 35px;
+
+    text-align: center;
+}
+
+
+/* ÜRÜN FOTOĞRAFI */
+
+.products-page .product-photo{
+    width: 100%;
+
+    height: 210px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+}
+
+
+.products-page .product-photo img{
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* ÜRÜN BİLGİLERİ */
+
+.products-page .all-product-info{
+    width: 100%;
+
+    padding: 12px 5px 0;
+
+    box-sizing: border-box;
+}
+
+
+.products-page .all-product-info h3{
+    font-size: 23px;
+
+    margin: 0 0 8px;
+}
+
+
+.products-page .all-product-info p{
+    font-size: 15px;
+
+    margin: 0 0 12px;
+
+    line-height: 1.4;
+}
+
+
+/* ÜRÜNÜ İNCELE BUTONU */
+
+.products-page .product-detail-btn{
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 9px 22px;
+
+    min-width: 140px;
+
+    font-size: 14px;
+}
+
+
+.products-page .product-detail-btn span{
+    font-size: 18px;
+}
+
+
+/* ==================================================
+   TELEFON EKRANINDA TEK SÜTUN
+================================================== */
+
+@media screen and (max-width: 700px){
+
+    .products-page .all-products{
+        width: 90%;
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* ÜRÜNLER SAYFASINDAKİ KARTLARI BİRAZ KÜÇÜLT */
+
+.products-page .all-products{
+    max-width: 850px;
+    gap: 20px;
+}
+
+
+.products-page .all-product-card{
+    min-height: 340px;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+
+.products-page .product-photo{
+    height: 175px;
+    border-radius: 22px;
+}
+
+
+.products-page .all-product-info{
+    padding-top: 8px;
+}
+
+
+.products-page .all-product-info h3{
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+
+.products-page .all-product-info p{
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+
+.products-page .product-detail-btn{
+    padding: 8px 18px;
+    min-width: 125px;
+    font-size: 13px;
+}
+
+.geri-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #c9a24d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.geri-btn:hover {
+    background: #a68132;
+}
+
+
+
+/* =========================================
+   KINA HEDİYELİĞİ DETAY SAYFASI
+========================================= */
+
+.urun-detay-sayfasi {
+    margin: 0;
+    padding: 45px 30px;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 248, 235, 0.45),
+            rgba(255, 248, 235, 0.45)
+        ),
+        url("arka-plan.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* FOTOĞRAF VE BİLGİ KARTINI ORTALA */
+
+.urun-detay-container {
+    width: 90%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 55px;
+}
+
+
+/* SOLDAKİ ÜRÜN FOTOĞRAFI */
+
+.urun-detay-resim {
+    width: 430px;
+
+    flex-shrink: 0;
+}
+
+
+.urun-detay-resim img {
+    width: 430px;
+    height: 430px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 30px
+        rgba(80, 50, 15, 0.20);
+}
+
+
+/* SAĞDAKİ ÜRÜN BİLGİ KARTI */
+
+.urun-detay-bilgi {
+    width: 530px;
+
+    padding: 35px 40px;
+
+    box-sizing: border-box;
+
+    border-radius: 25px;
+
+    background:
+        rgba(250, 248, 244, 0.92);
+
+    box-shadow:
+        0 12px 30px
+        rgba(80, 50, 15, 0.18);
+}
+
+
+/* ÜRÜN ADI */
+
+.urun-detay-bilgi h1 {
+    margin: 0 0 20px;
+
+    color: #b39455;
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+}
+
+
+/* ÜRÜN ÖZELLİKLERİ BAŞLIĞI */
+
+.urun-detay-bilgi h2 {
+    margin: 0 0 25px;
+
+    color: #4d4d4d;
+
+    font-size: 20px;
+}
+
+
+/* ÖZELLİK SATIRLARI */
+
+.ozellik {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 52px;
+
+    padding: 0 12px;
+
+    box-sizing: border-box;
+
+    border-top:
+        1px solid
+        #ded6c8;
+}
+
+
+.ozellik:last-of-type {
+    border-bottom:
+        1px solid
+        #ded6c8;
+}
+
+
+.ozellik span {
+    font-size: 18px;
+}
+
+
+.ozellik p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 16px;
+}
+
+
+/* BUTONLAR */
+
+.urun-butonu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.urun-detay-bilgi .whatsapp-btn,
+.urun-detay-bilgi .geri-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 48px;
+
+    padding: 0 17px;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    border-radius: 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* WHATSAPP */
+
+.urun-detay-bilgi .whatsapp-btn {
+    background:
+        linear-gradient(
+            135deg,
+            #21c86a,
+            #18a957
+        );
+}
+
+
+/* GERİ DÖN */
+
+.urun-detay-bilgi .geri-btn {
+    background:
+        linear-gradient(
+            135deg,
+            #b79653,
+            #d0b06b
+        );
+}
+
+
+/* BUTON HAREKETİ */
+
+.urun-detay-bilgi .whatsapp-btn:hover,
+.urun-detay-bilgi .geri-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 15px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+/* TABLET VE TELEFON */
+
+@media screen and (max-width: 1000px) {
+
+    .urun-detay-sayfasi {
+        padding: 35px 20px;
+    }
+
+
+    .urun-detay-container {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+    .urun-detay-resim {
+        width: 100%;
+
+        max-width: 430px;
+    }
+
+
+    .urun-detay-resim img {
+        width: 100%;
+        height: 430px;
+    }
+
+
+    .urun-detay-bilgi {
+        width: 100%;
+
+        max-width: 530px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .urun-detay-sayfasi {
+        padding: 25px 15px;
+    }
+
+
+    .urun-detay-resim img {
+        height: 330px;
+    }
+
+
+    .urun-detay-bilgi {
+        padding: 28px 20px;
+    }
+
+
+    .urun-detay-bilgi h1 {
+        font-size: 34px;
+    }
+
+
+    .urun-butonu {
+        flex-direction: column;
+    }
+
+
+    .urun-detay-bilgi .whatsapp-btn,
+    .urun-detay-bilgi .geri-btn {
+        width: 100%;
+    }
+
+}
+
+
+
+
+/* =========================================
+   HAKKIMIZDA SAYFASI
+========================================= */
+
+.hakkimizda {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 45px 0 60px;
+}
+
+
+/* BAŞLIK */
+
+.hakkimizda-baslik {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.hakkimizda-baslik h1 {
+    margin-bottom: 12px;
+
+    color: #b39455;
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+}
+
+
+.hakkimizda-baslik p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ANA YAZI KARTI */
+
+.hakkimizda-kart {
+    max-width: 850px;
+
+    margin: 0 auto 35px;
+
+    padding: 35px 45px;
+
+    box-sizing: border-box;
+
+    background:
+        rgba(255, 252, 247, 0.92);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 28px
+        rgba(90, 65, 25, 0.15);
+
+    text-align: center;
+}
+
+
+.hakkimizda-kart h2 {
+    margin-top: 0;
+
+    color: #b39455;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+}
+
+
+.hakkimizda-kart p {
+    color: #5f5f5f;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* ÜÇ ÖZELLİK KUTUSU */
+
+.hakkimizda-ozellikler {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.hakkimizda-ozellik {
+    width: 300px;
+
+    padding: 28px 22px;
+
+    box-sizing: border-box;
+
+    background:
+        rgba(255, 252, 247, 0.92);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 22px
+        rgba(90, 65, 25, 0.13);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.hakkimizda-ozellik:hover {
+    transform:
+        translateY(-6px);
+}
+
+
+.hakkimizda-ozellik span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 35px;
+}
+
+
+.hakkimizda-ozellik h3 {
+    margin: 0 0 10px;
+
+    color: #b39455;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+}
+
+
+.hakkimizda-ozellik p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* İLETİŞİM BUTONU */
+
+.hakkimizda-buton {
+    text-align: center;
+}
+
+
+.hakkimizda-buton a {
+    display: inline-block;
+
+    padding: 14px 32px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b39455,
+            #d1b06b
+        );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.hakkimizda-buton a:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 7px 16px
+        rgba(90, 65, 25, 0.22);
+}
+
+
+/* TELEFON VE TABLET */
+
+@media screen and (max-width: 800px) {
+
+    .hakkimizda {
+        padding-top: 30px;
+    }
+
+
+    .hakkimizda-baslik h1 {
+        font-size: 40px;
+    }
+
+
+    .hakkimizda-ozellikler {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .hakkimizda-ozellik {
+        width: 100%;
+
+        max-width: 380px;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .hakkimizda {
+        width: 92%;
+    }
+
+
+    .hakkimizda-baslik h1 {
+        font-size: 34px;
+    }
+
+
+    .hakkimizda-baslik p {
+        font-size: 16px;
+    }
+
+
+    .hakkimizda-kart {
+        padding: 28px 20px;
+    }
+
+
+    .hakkimizda-kart h2 {
+        font-size: 26px;
+    }
+
+
+    .hakkimizda-kart p {
+        font-size: 15px;
+    }
+
+}
+/* =====================================
+   HAKKIMIZDA SAYFASI ARKA PLANI
+===================================== */
+
+body.hakkimizda-sayfasi {
+
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 248, 238, 0.35),
+            rgba(255, 248, 238, 0.35)
+        ),
+        url("hakkımzda.jpg.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+body.hakkimizda-sayfasi {
+    background-image: url("hakkımzda.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    min-height: 100vh;
+}
+
+/* HAKKIMIZDA SAYFASINA ÖZEL ARKA PLAN */
+
+body.hakkimizda-sayfasi {
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+body.hakkimizda-sayfasi .hakkimizda-container {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 248, 238, 0.30),
+            rgba(255, 248, 238, 0.30)
+        ),
+        url("hakkımzda.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+
+
+/* =========================================
+   İLETİŞİM SAYFASI
+========================================= */
+
+.iletisim {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 45px 0 65px;
+}
+
+
+/* BAŞLIK */
+
+.iletisim-baslik {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.iletisim-baslik h1 {
+    margin: 0 0 12px;
+
+    color: #b39455;
+
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+}
+
+
+.iletisim-baslik p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* SOL VE SAĞ KARTLAR */
+
+.iletisim-alani {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+}
+
+
+/* SOL: İLETİŞİM BİLGİLERİ */
+
+.iletisim-bilgileri {
+    width: 48%;
+
+    padding: 38px 42px;
+
+    box-sizing: border-box;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255, 252, 247, 0.94);
+
+    box-shadow:
+        0 10px 28px
+        rgba(90, 65, 25, 0.15);
+}
+
+
+.iletisim-bilgileri h2 {
+    margin: 0 0 15px;
+
+    color: #b39455;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+}
+
+
+.iletisim-aciklama {
+    margin-bottom: 28px;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* İLETİŞİM SATIRLARI */
+
+.iletisim-satir {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-top:
+        1px solid
+        #e6ddcf;
+}
+
+
+.iletisim-satir span {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        #f2e7d3;
+
+    font-size: 20px;
+}
+
+
+.iletisim-satir strong {
+    color: #555;
+
+    font-size: 16px;
+}
+
+
+.iletisim-satir p {
+    margin: 4px 0 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* WHATSAPP BUTONU */
+
+.iletisim-whatsapp {
+    display: block;
+
+    margin-top: 25px;
+
+    padding: 14px 20px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #21c86a,
+            #18a957
+        );
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.iletisim-whatsapp:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 7px 16px
+        rgba(20, 130, 65, 0.25);
+}
+
+
+/* SAĞ: MESAJ FORMU */
+
+.iletisim-form-kart {
+    width: 48%;
+
+    padding: 38px 42px;
+
+    box-sizing: border-box;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255, 252, 247, 0.94);
+
+    box-shadow:
+        0 10px 28px
+        rgba(90, 65, 25, 0.15);
+}
+
+
+.iletisim-form-kart h2 {
+    margin: 0 0 25px;
+
+    color: #b39455;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+}
+
+
+/* FORM */
+
+.iletisim-form-kart form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.iletisim-form-kart label {
+    margin-bottom: 7px;
+
+    color: #555;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.iletisim-form-kart input,
+.iletisim-form-kart textarea {
+    width: 100%;
+
+    margin-bottom: 18px;
+
+    padding: 13px 15px;
+
+    box-sizing: border-box;
+
+    border:
+        1px solid
+        #ddd2c2;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background:
+        rgba(255, 255, 255, 0.8);
+
+    color: #555;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+}
+
+
+.iletisim-form-kart input:focus,
+.iletisim-form-kart textarea:focus {
+    border-color:
+        #b39455;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(179, 148, 85, 0.12);
+}
+
+
+.iletisim-form-kart textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+/* MESAJ GÖNDER BUTONU */
+
+.iletisim-form-kart button {
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b39455,
+            #d1b06b
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.iletisim-form-kart button:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 7px 16px
+        rgba(90, 65, 25, 0.22);
+}
+
+
+/* TABLET VE TELEFON */
+
+@media screen and (max-width: 850px) {
+
+    .iletisim-alani {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .iletisim-bilgileri,
+    .iletisim-form-kart {
+        width: 100%;
+
+        max-width: 600px;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .iletisim {
+        width: 92%;
+
+        padding-top: 30px;
+    }
+
+
+    .iletisim-baslik h1 {
+        font-size: 34px;
+    }
+
+
+    .iletisim-bilgileri,
+    .iletisim-form-kart {
+        padding: 28px 22px;
+    }
+
+
+    .iletisim-bilgileri h2,
+    .iletisim-form-kart h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+
+/* =========================================
+   INSTAGRAM VE ADRES BÖLÜMÜ
+========================================= */
+
+.sosyal-bilgi {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 18px 0;
+
+    border-top:
+        1px solid
+        #e6ddcf;
+}
+
+
+.sosyal-bilgi span {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        #f2e7d3;
+
+    font-size: 21px;
+}
+
+
+.sosyal-bilgi strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #555;
+
+    font-size: 16px;
+}
+
+
+.sosyal-bilgi p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* INSTAGRAM BUTONU */
+
+.instagram-btn {
+    display: block;
+
+    margin: 5px 0 25px;
+
+    padding: 14px 18px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b39455,
+            #d1b06b
+        );
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.instagram-btn:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 7px 16px
+        rgba(90, 65, 25, 0.22);
+}
+
+
+.adres-bilgisi {
+    margin-top: 10px;
+}
+
+
+/* =====================================
+   ANA SAYFA - TELEFON DÜZELTMESİ
+===================================== */
+
+@media screen and (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+
+    /* ANA SAYFA ARKA PLANI */
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    /* ÜST BÖLÜM */
+
+    .navbar {
+        width: 100%;
+        height: auto !important;
+        min-height: 110px;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 10px 5px !important;
+
+        margin: 0 !important;
+    }
+
+
+    /* LOGO */
+
+    .navbar .logo {
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        margin: 0 0 8px 0 !important;
+    }
+
+
+    .navbar .logo img {
+        width: 58px !important;
+        height: 58px !important;
+
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+
+    .navbar .logo a {
+        margin-left: 9px !important;
+
+        font-size: 28px !important;
+
+        white-space: nowrap;
+    }
+
+
+    /* MENÜ */
+
+    .navbar ul {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: row !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        flex-wrap: wrap !important;
+
+        gap: 2px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        list-style: none;
+    }
+
+
+    .navbar ul li {
+        display: block !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        line-height: normal !important;
+    }
+
+
+    .navbar ul li a {
+        display: block !important;
+
+        padding: 5px 6px !important;
+
+        font-size: 9px !important;
+
+        line-height: normal !important;
+
+        white-space: nowrap;
+    }
+
+
+    /* ANA SAYFA YAZILARI */
+
+    .container .center {
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        padding: 65px 12px 30px !important;
+
+        text-align: center !important;
+    }
+
+
+    .center h1 {
+        width: 100% !important;
+
+        margin: 0 auto 12px !important;
+
+        padding: 0 !important;
+
+        font-size: 39px !important;
+
+        line-height: 1.12 !important;
+
+        text-align: center !important;
+
+        word-break: normal !important;
+
+        overflow-wrap: normal !important;
+    }
+
+
+    .center h2 {
+        width: 100% !important;
+
+        margin: 0 auto !important;
+
+        padding: 0 !important;
+
+        font-size: 22px !important;
+
+        line-height: 1.35 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* BUTONLAR */
+
+    .center .buttons {
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+
+        gap: 10px !important;
+
+        margin: 28px 0 0 0 !important;
+
+        padding: 0 !important;
+    }
+
+
+    .buttons button {
+        width: 170px !important;
+
+        height: 45px !important;
+
+        margin: 0 !important;
+
+        font-size: 15px !important;
+    }
+
+}
+
+/* TELEFONDA MENÜYÜ YAN YANA YAP */
+
+@media screen and (max-width: 600px) {
+
+    .navbar ul {
+        display: flex !important;
+
+        flex-direction: row !important;
+
+        justify-content: center !important;
+
+        align-items: center !important;
+
+        flex-wrap: nowrap !important;
+
+        gap: 8px !important;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+    }
+
+
+    .navbar ul li {
+        display: inline-block !important;
+
+        width: auto !important;
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        line-height: normal !important;
+    }
+
+
+    .navbar ul li a {
+        display: inline-block !important;
+
+        font-size: 9px !important;
+
+        line-height: 1 !important;
+
+        padding: 7px 3px !important;
+
+        white-space: nowrap !important;
+    }
+
+}
+
+
+/* =====================================
+   ÜRÜN DETAY SAYFALARI - TELEFON AYARI
+===================================== */
+
+@media screen and (max-width: 600px) {
+
+    /* Sayfanın sağa taşmasını engeller */
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* Ürün detay alanı */
+    .product-detail {
+        width: 92% !important;
+
+        max-width: 420px !important;
+
+        min-height: auto !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+
+        gap: 20px !important;
+
+        margin: 25px auto !important;
+
+        padding: 18px !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* Ürün fotoğrafı */
+    .product-image {
+        width: 100% !important;
+
+        height: auto !important;
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+    }
+
+
+    .product-image img {
+        display: block !important;
+
+        width: 100% !important;
+
+        height: 260px !important;
+
+        max-width: 100% !important;
+
+        object-fit: cover !important;
+
+        border-radius: 18px !important;
+    }
+
+
+    /* Ürün bilgi kartı */
+    .product-info {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        min-height: auto !important;
+
+        margin: 0 !important;
+
+        padding: 20px 15px !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* Ürün adı */
+    .product-info h1 {
+        width: 100% !important;
+
+        margin: 0 0 15px !important;
+
+        font-size: 32px !important;
+
+        line-height: 1.2 !important;
+
+        text-align: center !important;
+    }
+
+
+    /* Ürün özellikleri başlığı */
+    .product-info p {
+        margin: 0 0 12px !important;
+
+        font-size: 18px !important;
+
+        text-align: center !important;
+    }
+
+
+    /* Özellik listesi */
+    .product-features {
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        list-style: none !important;
+    }
+
+
+    .product-features li {
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        padding: 12px 8px !important;
+
+        font-size: 15px !important;
+
+        line-height: 1.4 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* Sipariş ve geri dön butonları */
+    .product-buttons {
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        gap: 10px !important;
+
+        margin-top: 18px !important;
+    }
+
+
+    .product-buttons a {
+        width: 100% !important;
+
+        max-width: 260px !important;
+
+        padding: 13px 10px !important;
+
+        font-size: 14px !important;
+
+        text-align: center !important;
+
+        box-sizing: border-box !important;
+    }
+
+}
+.product-slider {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.product-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .product-slider {
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-card {
+        display: block;
+        min-width: 85%;
+        flex: 0 0 85%;
+    }
+
+}
+
+
+/* MOBİL ÜRÜNLER SAYFASI DÜZENİ */
+@media (max-width:768px) {
+
+    .all-products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+
+    .all-product-card {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .product-photo {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .product-photo img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+    .all-product-info {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* ÜRÜNLER SAYFASI TELEFON SON DÜZENLEME */
+@media screen and (max-width:768px){
+
+    .products-page .all-products{
+        display:flex !important;
+        flex-direction:column !important;
+        width:92% !important;
+        max-width:400px !important;
+        margin:20px auto !important;
+        gap:20px !important;
+    }
+
+
+    .products-page .all-product-card{
+        display:flex !important;
+        flex-direction:column !important;
+        width:100% !important;
+        min-height:auto !important;
+        height:auto !important;
+        padding:15px !important;
+        overflow:visible !important;
+    }
+
+
+    .products-page .product-photo{
+        width:100% !important;
+        height:200px !important;
+    }
+
+
+    .products-page .product-photo img{
+        width:100% !important;
+        height:100% !important;
+        object-fit:cover !important;
+    }
+
+
+    .products-page .all-product-info{
+        display:block !important;
+        width:100% !important;
+    }
+
+}
+@media screen and (max-width:768px){
+
+    .products-page .all-product-card{
+        display:flex !important;
+        visibility:visible !important;
+        opacity:1 !important;
+        position:relative !important;
+        transform:none !important;
+    }
+
+    .products-page .all-products{
+        display:flex !important;
+        flex-direction:column !important;
+        overflow:visible !important;
+        height:auto !important;
+        max-height:none !important;
+    }
+
+}
+
+
+/* HEDİYELİKLER SAYFASI TELEFON DÜZENİ */
+@media screen and (max-width:600px){
+
+    .products{
+        width:100%;
+        margin:30px auto;
+        gap:10px;
+        overflow:hidden;
+    }
+
+
+    .product-slider{
+        width:100%;
+        padding:10px;
+        gap:15px;
+    }
+
+
+    .products .product-slider .product-card{
+
+        min-width:85% !important;
+        width:85% !important;
+
+        height:auto !important;
+        min-height:330px;
+
+        border-radius:20px;
+
+    }
+
+
+    .products .product-slider .product-card img{
+
+        width:100%;
+        height:170px;
+
+        object-fit:cover;
+
+    }
+
+
+    .product-card h3{
+
+        font-size:20px !important;
+
+    }
+
+
+    .product-card p{
+
+        font-size:14px !important;
+
+    }
+
+
+    .product-card a{
+
+        width:110px;
+
+        padding:8px;
+
+        font-size:14px;
+
+    }
+
+
+    .slider-btn{
+
+        width:35px;
+        height:35px;
+
+        font-size:20px;
+
+        flex-shrink:0;
+
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    .products .product-slider{
+        justify-content:flex-start !important;
+        padding-left:10px;
+    }
+
+    .products .product-slider .product-card{
+        min-width:85% !important;
+        flex:0 0 85% !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   NİŞAN TEPSİLERİ - HEDİYELİKLER
+   TELEFON SLIDER DÜZENİ
+===================================== */
+
+@media screen and (max-width:600px){
+
+    .products{
+        width:100% !important;
+        margin:30px auto !important;
+        display:flex !important;
+        align-items:center !important;
+        gap:8px !important;
+        overflow:hidden !important;
+    }
+
+
+    .products .product-slider{
+
+        width:100% !important;
+
+        display:flex !important;
+
+        justify-content:flex-start !important;
+
+        gap:15px !important;
+
+        overflow-x:auto !important;
+
+        padding:10px !important;
+
+        scroll-behavior:smooth;
+
+        scroll-snap-type:x mandatory;
+
+    }
+
+
+    .products .product-slider .product-card{
+
+        width:85% !important;
+
+        min-width:85% !important;
+
+        flex:0 0 85% !important;
+
+        height:auto !important;
+
+        min-height:340px !important;
+
+        scroll-snap-align:center;
+
+    }
+
+
+    .products .product-slider .product-card img{
+
+        width:100% !important;
+
+        height:180px !important;
+
+        object-fit:cover !important;
+
+    }
+
+
+    .products .product-slider .product-card h3{
+
+        font-size:20px !important;
+
+        margin-top:12px;
+
+    }
+
+
+    .products .product-slider .product-card p{
+
+        font-size:14px !important;
+
+    }
+
+
+    .products .product-slider .product-card a{
+
+        width:110px !important;
+
+        padding:8px !important;
+
+        font-size:14px !important;
+
+    }
+
+
+    .products .slider-btn{
+
+        width:35px !important;
+
+        height:35px !important;
+
+        font-size:20px !important;
+
+        flex-shrink:0;
+
+    }
+
+}
